@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="output.css" />
+      <title>Weather App</title>
+   </head>
+   <body class="bg-slate-100">
+      <div
+         class="mx-auto flex min-h-svh max-w-4xl flex-col justify-center px-4"
+      >
+         <h1
+            class="text-center text-4xl font-semibold leading-normal sm:text-5xl [&:not(:last-child)]:mb-6"
+         >
+            AccuWeather API
+         </h1>
+         <div
+            class="flex justify-center gap-4 max-sm:flex-col [&:not(:last-child)]:mb-4"
+         >
+            <input
+               type="text"
+               placeholder="Enter city name..."
+               class="w-full rounded-lg border-2 border-solid border-amber-500 p-2 focus-visible:outline focus-visible:outline-4 focus-visible:outline-amber-300 sm:w-96"
+            />
+            <button
+               type="button"
+               class="rounded-lg bg-blue-700 px-5 text-sm font-medium leading-normal text-white hover:bg-blue-800 focus-visible:outline focus-visible:outline-4 focus-visible:outline-blue-300 max-sm:py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus-visible:outline-blue-800"
+            >
+               Search
+            </button>
+         </div>
+         <div data-weather class="text-center"></div>
+      </div>
+      <script src="main.js"></script>
+   </body>
+</html>
